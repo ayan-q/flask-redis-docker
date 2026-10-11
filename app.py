@@ -1,4 +1,4 @@
-import time
+return f"Welcome Ayan! DevOps Pipeline Active. Page viewed {count} times.\n"import time
 import redis
 from flask import Flask
 
@@ -20,7 +20,7 @@ def get_hit_count():
 @app.route('/')
 def hello():
     count = get_hit_count()
-    return f"Hello from Ayan's Multi-Container Stack! This page has been viewed {count} times.\n"
+    return f"Welcome Ayan! DevOps Pipeline Active. Page viewed {count} times.\n"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
